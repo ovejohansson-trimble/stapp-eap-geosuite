@@ -4,7 +4,6 @@ interface Props {
   header: string;
   bodyText: string;
 }
-
 const FAQItem = ({ id, header, bodyText }: Props) => {
   return (
     <Accordion.Item eventKey={id.toString()}>
