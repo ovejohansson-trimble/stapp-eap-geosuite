@@ -5,7 +5,7 @@ interface Props {
 }
 const FAQList = ({ faqs }: Props) => {
   if (faqs.length === 0) {
-    return <p>No frequently asked questions yet</p>;
+    return <p>FAQ is not available yet</p>;
   }
   return (
     <Accordion>
