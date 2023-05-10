@@ -13,7 +13,7 @@ const Overview = () => {
           Geosuite Presentation EAP (Early Access program) is for geosuite users
           who want to test, evaluate and provide feedback on "pre-releases" of
           the so called new Geosuite Presentation. We are using this (EAP)
-          process, as we want to create a solution that is made with the help of
+          process as we want to create a solution that is made with the help of
           you (the users).
         </p>
         <p>
