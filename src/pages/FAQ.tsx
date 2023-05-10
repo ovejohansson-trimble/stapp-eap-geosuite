@@ -1,35 +1,16 @@
 import PageHeader from "./PageHeader";
 import FAQList from "../components/faq/FAQList";
 
-const DUMMY_DATA = [
-  {
-    header: "How do i install?",
-    bodyText: "Press the button",
-  },
+const FAQ_DATA = [
   {
     header: "How do i install?",
     bodyText:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id commodi quasi eos debitis minus perferendis alias soluta asperiores blanditiis minima eius nostrum veniam, voluptas quam sequi rerum neque maxime necessitatibus!",
+      "Go to the Overview tab, then navigate to the bottom of the webpage. There, you can download the newest release by clicking a download button. Each release is a simple one click install.",
   },
   {
-    header: "How do i install?",
+    header: "How do i participate?",
     bodyText:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id commodi quasi eos debitis minus perferendis alias soluta asperiores blanditiis minima eius nostrum veniam, voluptas quam sequi rerum neque maxime necessitatibus!",
-  },
-  {
-    header: "How do i install?",
-    bodyText:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id commodi quasi eos debitis minus perferendis alias soluta asperiores blanditiis minima eius nostrum veniam, voluptas quam sequi rerum neque maxime necessitatibus!",
-  },
-  {
-    header: "How do i install?",
-    bodyText:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id commodi quasi eos debitis minus perferendis alias soluta asperiores blanditiis minima eius nostrum veniam, voluptas quam sequi rerum neque maxime necessitatibus!",
-  },
-  {
-    header: "What is a frequently asked question?",
-    bodyText:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id commodi quasi eos debitis minus perferendis alias soluta asperiores blanditiis minima eius nostrum veniam, voluptas quam sequi rerum neque maxime necessitatibus!",
+      "Go to the Overview tab, then follow the steps described in the section 'How to participate'",
   },
 ];
 
@@ -39,9 +20,11 @@ const FAQ = () => {
       <PageHeader header="FAQ"></PageHeader>
       <section>
         <h1>Frequently asked questions</h1>
-        <p>Questions that often arise is posted here.</p>
+        <p>
+          In this section frequently asked questions are posted and answered.
+        </p>
       </section>
-      <FAQList faqs={DUMMY_DATA}></FAQList>
+      <FAQList faqs={FAQ_DATA}></FAQList>
     </article>
   );
 };

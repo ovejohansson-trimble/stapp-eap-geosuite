@@ -78,7 +78,7 @@ const Overview = () => {
           The latest version of the Geosuite EAP will be available to download
           from the following link. It is a simple one click install.
         </p>
-        <button className="btn btn-primary">
+        <button className="btn btn-primary" disabled={true}>
           <a href="" className={styles.whiteText}>
             Download
           </a>

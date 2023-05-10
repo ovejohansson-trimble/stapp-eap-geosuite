@@ -5,13 +5,7 @@ const DUMMY_DATA = [
   {
     releaseName: "Geosuite EAP 1.0.0",
     date: "24:e juni 2022",
-    notes: [
-      "Fixat bugg 1",
-      "Fixat bugg 2",
-      "Fixat bugg 3",
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
-    ],
+    notes: [],
   },
   {
     releaseName: "Geosuite EAP 1.0.1",
@@ -54,13 +48,14 @@ const ReleaseNotes = () => {
       <PageHeader header="Release notes"></PageHeader>
       <section className="mb-4">
         <h1>Description</h1>
+        <p>For each new release, release notes will be posted here.</p>
         <p>
-          For each release, notes on updates, bug fixes and new features will be
-          posted here.
+          The release notes will contain information regarding updates, bug
+          fixes and new features.
         </p>
       </section>
       <section>
-        <ReleaseNoteList releaseNotes={DUMMY_DATA}></ReleaseNoteList>;
+        <ReleaseNoteList releaseNotes={[]}></ReleaseNoteList>
       </section>
     </article>
   );
