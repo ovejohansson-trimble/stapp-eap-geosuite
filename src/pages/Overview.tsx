@@ -79,7 +79,7 @@ const Overview = () => {
           from the following link. It is a simple one click install.
         </p>
         <button className="btn btn-primary" disabled={true}>
-          <a href="" className={styles.whiteText}>
+          <a href="https://eap.geosuite.se/install/Publi" className={styles.whiteText}>
             Download
           </a>
         </button>
