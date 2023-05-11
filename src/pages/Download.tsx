@@ -4,7 +4,6 @@ import PageHeader from "./PageHeader";
 
 const Download = () => {
   const downloadLink = "";
-  const currentVersion = "";
   return (
     <article>
       <PageHeader header="Download"></PageHeader>
