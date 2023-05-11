@@ -1,6 +1,7 @@
 import PageHeader from "./PageHeader";
 import EAPProcess from "../assets/EAP_process.png";
 import { Link } from "react-router-dom";
+import styles from "./Overview.module.css";
 
 const Overview = () => {
   return (
@@ -30,14 +31,13 @@ const Overview = () => {
           In the beginning the functionalities will be limited, but it will
           expand for each iteration.
         </p>
-
-        <img
-          src={EAPProcess}
-          className="mx-auto my-4 d-none d-md-block d-lg-block d-xl-block"
-          alt="EAP process"
-          width="684px"
-          height="608px"
-        />
+        <div className="d-flex justify-content-center my-4">
+          <img
+            src={EAPProcess}
+            className={styles.responsiveImage}
+            alt="EAP process"
+          />
+        </div>
       </section>
       <section className="mb-4">
         <h1>How to participate</h1>
