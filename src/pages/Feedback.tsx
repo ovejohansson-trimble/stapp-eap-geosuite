@@ -17,7 +17,9 @@ const Feedback = () => {
           The form will be available during the first two weeks of each
           iteration.
         </p>
-        <a href="https://forms.gle/nAPPSg9xKchfQxCn6">Feedback form</a>
+        <a href="https://forms.gle/nAPPSg9xKchfQxCn6" target="_blank">
+          Feedback form
+        </a>
       </section>
     </article>
   );

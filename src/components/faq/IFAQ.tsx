@@ -1,4 +1,8 @@
+import { ReactNode } from "react";
+
 interface IFAQ {
   header: string;
-  bodyText: string;
+  bodyText: ReactNode;
 }
+
+export default IFAQ;

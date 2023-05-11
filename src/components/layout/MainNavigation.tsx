@@ -29,6 +29,9 @@ const MainNavigation = () => {
           <Nav.Link as={Link} to="/faq">
             FAQ
           </Nav.Link>
+          <Nav.Link as={Link} to="/download">
+            Download
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

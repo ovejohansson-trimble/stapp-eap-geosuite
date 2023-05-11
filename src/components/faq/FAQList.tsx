@@ -1,5 +1,6 @@
 import FAQItem from "./FAQItem";
 import { Accordion } from "react-bootstrap";
+import IFAQ from "./IFAQ";
 interface Props {
   faqs: IFAQ[];
 }

@@ -1,16 +1,27 @@
 import PageHeader from "./PageHeader";
 import FAQList from "../components/faq/FAQList";
+import { Link } from "react-router-dom";
 
 const FAQ_DATA = [
   {
     header: "How do i install?",
-    bodyText:
-      "Go to the Overview tab, then navigate to the bottom of the webpage. There, you can download the newest release by clicking a download button. Each release is a simple one click install.",
+    bodyText: (
+      <>
+        Navigate to the <Link to={"/download"}>Download</Link> tab and download
+        the installation file. The installation is a so called one click
+        installation, which means that the installation consists of only one
+        file
+      </>
+    ),
   },
   {
     header: "How do i participate?",
-    bodyText:
-      "Go to the Overview tab, then follow the steps described in the section 'How to participate'",
+    bodyText: (
+      <>
+        Go to the <Link to={"/"}>Overview</Link> tab, then follow the steps
+        described in the section "How to participate"
+      </>
+    ),
   },
 ];
 

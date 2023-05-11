@@ -5,6 +5,7 @@ import Feedback from "./pages/Feedback";
 import Overview from "./pages/Overview";
 import ReleaseNotes from "./pages/ReleaseNotes";
 import Layout from "./components/layout/Layout";
+import Download from "./pages/Download";
 
 defineCustomElements();
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/feedback" element={<Feedback />} />
         <Route path="/releasenotes" element={<ReleaseNotes />} />
+        <Route path="/download" element={<Download />} />
       </Routes>
     </Layout>
   );

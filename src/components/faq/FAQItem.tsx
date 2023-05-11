@@ -1,8 +1,9 @@
+import { ReactNode } from "react";
 import { Accordion } from "react-bootstrap";
 interface Props {
   id: number;
   header: string;
-  bodyText: string;
+  bodyText: ReactNode;
 }
 const FAQItem = ({ id, header, bodyText }: Props) => {
   return (
