@@ -2,6 +2,7 @@ import PageHeader from "./PageHeader";
 import EAPProcess from "../assets/EAP_process.png";
 import { Link } from "react-router-dom";
 import styles from "./Overview.module.css";
+import { currentEAP } from "../services/common-data";
 
 const Overview = () => {
   return (
@@ -78,12 +79,13 @@ const Overview = () => {
       <section className="mb-4">
         <h1>Deadlines</h1>
         <p>
-          The next version of new Geosuite presentation (v 1.0.0) will be
-          available to download <b>12th of June</b>.
+          The next version of new Geosuite presentation (v{" "}
+          {currentEAP.iteration}) will be available to download{" "}
+          <b>{currentEAP.startDate}</b>.
         </p>
         <p>
-          The feedback form (for v 1.0.0) is open from release until the{" "}
-          <b>25th of June</b>.
+          The feedback form (for v {currentEAP.iteration}) is open from release
+          until the <b>{currentEAP.endDate}</b>.
         </p>
       </section>
     </article>

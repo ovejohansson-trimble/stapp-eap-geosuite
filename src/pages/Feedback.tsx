@@ -1,4 +1,5 @@
 import PageHeader from "./PageHeader";
+import { currentEAP } from "../services/common-data";
 
 const Feedback = () => {
   return (
@@ -14,8 +15,11 @@ const Feedback = () => {
           iteration.
         </p>
         <p>
-          The feedback form (for v 1.0.0) is open between{" "}
-          <b>12th and 25th of June</b>.
+          The feedback form (for v {currentEAP.iteration}) is open between{" "}
+          <b>
+            {currentEAP.startDate} and {currentEAP.endDate}
+          </b>
+          .
         </p>
         <a href="https://forms.gle/nAPPSg9xKchfQxCn6" target="_blank">
           Feedback form

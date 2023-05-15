@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from "./Download.module.css";
 import PageHeader from "./PageHeader";
+import { currentEAP } from "../services/common-data";
 
 const Download = () => {
   const downloadLink = "";
@@ -10,8 +11,9 @@ const Download = () => {
       <section className="mb-4">
         <h1>Download</h1>
         <p>
-          The next version of new Geosuite presentation (v 1.0.0) will be
-          available to download <b>12th of June</b>.
+          The next version of new Geosuite presentation (v{" "}
+          {currentEAP.iteration}) will be available to download{" "}
+          <b>{currentEAP.startDate}</b>.
         </p>
         <p>
           Read more about the installation in the <Link to={"/faq"}>FAQ</Link>{" "}
