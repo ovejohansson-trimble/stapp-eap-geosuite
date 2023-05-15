@@ -20,6 +20,9 @@ const MainNavigation = () => {
           <Nav.Link as={Link} to="/">
             Overview
           </Nav.Link>
+          <Nav.Link as={Link} to="/download">
+            Download
+          </Nav.Link>
           <Nav.Link as={Link} to="/releasenotes">
             Release notes
           </Nav.Link>
@@ -28,9 +31,6 @@ const MainNavigation = () => {
           </Nav.Link>
           <Nav.Link as={Link} to="/faq">
             FAQ
-          </Nav.Link>
-          <Nav.Link as={Link} to="/download">
-            Download
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>

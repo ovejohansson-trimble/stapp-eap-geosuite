@@ -75,6 +75,17 @@ const Overview = () => {
           </a>
         </p>
       </section>
+      <section className="mb-4">
+        <h1>Deadlines</h1>
+        <p>
+          The next version of new Geosuite presentation (v 1.0.0) will be
+          available to download <b>12th of June</b>.
+        </p>
+        <p>
+          The feedback form (for v 1.0.0) is open from release until the{" "}
+          <b>25th of June</b>.
+        </p>
+      </section>
     </article>
   );
 };

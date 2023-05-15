@@ -10,8 +10,8 @@ const Download = () => {
       <section className="mb-4">
         <h1>Download</h1>
         <p>
-          The latest version of the Geosuite EAP will be available for download
-          in this tab.
+          The next version of new Geosuite presentation (v 1.0.0) will be
+          available to download <b>12th of June</b>.
         </p>
         <p>
           Read more about the installation in the <Link to={"/faq"}>FAQ</Link>{" "}

@@ -14,8 +14,8 @@ const Feedback = () => {
           iteration.
         </p>
         <p>
-          The form will be available during the first two weeks of each
-          iteration.
+          The feedback form (for v 1.0.0) is open between{" "}
+          <b>12th and 25th of June</b>.
         </p>
         <a href="https://forms.gle/nAPPSg9xKchfQxCn6" target="_blank">
           Feedback form
