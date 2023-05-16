@@ -71,8 +71,8 @@ const Overview = () => {
         </ol>
         <p>
           If you have any questions or issues, feel free to contact us at{" "}
-          <a href="mailto:civil.support@trimble.com">
-            civil.support@trimble.com
+          <a href="mailto:anders_rosenquist@trimble.com">
+            anders_rosenquist@trimble.com
           </a>
         </p>
       </section>
