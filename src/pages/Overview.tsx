@@ -71,9 +71,7 @@ const Overview = () => {
         </ol>
         <p>
           If you have any questions or issues, feel free to contact us at{" "}
-          <a href="mailto:anders_rosenquist@trimble.com">
-            anders_rosenquist@trimble.com
-          </a>
+          <a href="mailto:eap.geosuite@trimble.com">eap.geosuite@trimble.com</a>
         </p>
       </section>
       <section className="mb-4">
