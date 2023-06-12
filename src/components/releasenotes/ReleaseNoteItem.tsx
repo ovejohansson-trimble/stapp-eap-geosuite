@@ -9,7 +9,9 @@ const ReleaseNoteItem = ({ releaseNote }: Props) => {
   return (
     <article className={styles.listItem}>
       <h1>{releaseNote.releaseName}</h1>
-      <p>{releaseNote.date}</p>
+      <p>
+        <b>{releaseNote.date}</b>
+      </p>
       <ul>
         {releaseNote.notes.map((note, i) => (
           <li key={i}>{note}</li>

@@ -4,7 +4,6 @@ import PageHeader from "./PageHeader";
 import { currentEAP } from "../services/common-data";
 
 const Download = () => {
-  const downloadLink = "";
   return (
     <article>
       <PageHeader header="Download"></PageHeader>
@@ -12,16 +11,31 @@ const Download = () => {
         <h1>Download</h1>
         <p>
           The next version of new Geosuite presentation (v{" "}
-          {currentEAP.iteration}) will be available to download{" "}
+          {currentEAP.iteration}) is available to download from{" "}
           <b>{currentEAP.startDate}</b>.
         </p>
         <p>
           Read more about the installation in the <Link to={"/faq"}>FAQ</Link>{" "}
           tab
         </p>
+        <h3>Important information</h3>
+        <p>
+          The first release of the EAP (v {currentEAP.iteration}) has very
+          limited functionality.
+        </p>
+        <p>
+          The aim for the first release is to make sure that you as a
+          participant can access and download the client, make sure that the
+          authentication works, and that you as a user can reach the geosuite
+          projects stored in the cloud. It is also meant for you as a user to
+          get a preview of the new user interface, even though the functionality
+          is very limited.
+        </p>
         <a
-          href={downloadLink}
-          className={[styles.aButton, styles.disabled].join(" ")}
+          href={
+            "https://gdmgateway.salmonflower-00ba38c7.swedencentral.azurecontainerapps.io/install/"
+          }
+          className={[styles.aButton].join(" ")}
         >
           Download
         </a>

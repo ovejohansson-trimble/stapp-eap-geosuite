@@ -1,3 +1,4 @@
+import { RELEASE_NOTES } from "../components/releasenotes/ReleaseNote";
 import ReleaseNoteList from "../components/releasenotes/ReleaseNoteList";
 import PageHeader from "./PageHeader";
 
@@ -14,7 +15,7 @@ const ReleaseNotes = () => {
         </p>
       </section>
       <section>
-        <ReleaseNoteList releaseNotes={[]}></ReleaseNoteList>
+        <ReleaseNoteList releaseNotes={RELEASE_NOTES}></ReleaseNoteList>
       </section>
     </article>
   );

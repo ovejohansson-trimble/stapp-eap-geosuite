@@ -1,13 +1,13 @@
 import { Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import GeosuiteLogo from "../../assets/Geosuite_Logo.svg";
+import TrimbleLogo from "../../assets/Trimble_Logo.svg";
 
 const MainNavigation = () => {
   return (
     <Navbar collapseOnSelect expand="sm" bg="light" variant="light">
       <Navbar.Brand as={Link} to="/">
         <img
-          src={GeosuiteLogo}
+          src={TrimbleLogo}
           alt="logo"
           width="150px"
           height="30px"

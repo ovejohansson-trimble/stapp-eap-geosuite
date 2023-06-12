@@ -4,6 +4,15 @@ import { Link } from "react-router-dom";
 
 const FAQ_DATA = [
   {
+    header: "How do i participate?",
+    bodyText: (
+      <>
+        Go to the <Link to={"/"}>Overview</Link> tab, then follow the steps
+        described in the section "How to participate"
+      </>
+    ),
+  },
+  {
     header: "How do i install?",
     bodyText: (
       <>
@@ -11,15 +20,6 @@ const FAQ_DATA = [
         the installation file. The installation is a so called one click
         installation, which means that the installation consists of only one
         file
-      </>
-    ),
-  },
-  {
-    header: "How do i participate?",
-    bodyText: (
-      <>
-        Go to the <Link to={"/"}>Overview</Link> tab, then follow the steps
-        described in the section "How to participate"
       </>
     ),
   },

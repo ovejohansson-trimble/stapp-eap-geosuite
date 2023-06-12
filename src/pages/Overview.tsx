@@ -9,6 +9,15 @@ const Overview = () => {
     <article>
       {" "}
       <PageHeader header="Geosuite Presentation EAP"></PageHeader>
+      {true && (
+        <section>
+          <h1 className="display-3 mb-4 d-flex justify-content-center">
+            <Link to={"/download"}>
+              EAP VERSION v{currentEAP.iteration} IS NOW AVAILABLE
+            </Link>
+          </h1>
+        </section>
+      )}
       <section className="mb-4">
         <h1>About</h1>
         <p>
@@ -16,7 +25,9 @@ const Overview = () => {
           who want to test, evaluate and provide feedback on "pre-releases" of
           the so called new Geosuite Presentation. We are using this (EAP)
           process as we want to create a solution that is made with the help of
-          you (the users).
+          you (the users). Note that this product is available through a so
+          called early access program, and is not a finished product. The
+          product is subject to change, and actual results may materially differ
         </p>
         <p>
           The work is divided in to iterations, where we aim to release a new
@@ -77,8 +88,8 @@ const Overview = () => {
       <section className="mb-4">
         <h1>Deadlines</h1>
         <p>
-          The next version of new Geosuite presentation (v{" "}
-          {currentEAP.iteration}) will be available to download{" "}
+          The current version of new Geosuite presentation (v{" "}
+          {currentEAP.iteration}) is available to download from{" "}
           <b>{currentEAP.startDate}</b>.
         </p>
         <p>
