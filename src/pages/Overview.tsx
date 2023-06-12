@@ -88,9 +88,8 @@ const Overview = () => {
       <section className="mb-4">
         <h1>Deadlines</h1>
         <p>
-          The current version of new Geosuite presentation (v{" "}
-          {currentEAP.iteration}) is available to download from{" "}
-          <b>{currentEAP.startDate}</b>.
+          The current version of new Geosuite presentation EAP (v{" "}
+          {currentEAP.iteration}) is now available to download.
         </p>
         <p>
           The feedback form (for v {currentEAP.iteration}) is open from release
