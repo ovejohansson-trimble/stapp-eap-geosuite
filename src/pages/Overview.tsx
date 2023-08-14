@@ -2,7 +2,7 @@ import PageHeader from "./PageHeader";
 import EAPProcess from "../assets/EAP_process.png";
 import { Link } from "react-router-dom";
 import styles from "./Overview.module.css";
-import { currentEAP } from "../services/common-data";
+import { currentEAP, nextEAP } from "../services/common-data";
 
 const Overview = () => {
   return (
@@ -91,9 +91,10 @@ const Overview = () => {
           The current version of new Geosuite presentation EAP (v{" "}
           {currentEAP.iteration}) is now available to download.
         </p>
+        <p>The feedback form (for v {currentEAP.iteration}) is closed.</p>
         <p>
-          The feedback form (for v {currentEAP.iteration}) is open from release
-          until the <b>{currentEAP.endDate}</b>.
+          The next version of Geosuite Presentation EAP (v {nextEAP.iteration})
+          will be released at {nextEAP.startDate}
         </p>
       </section>
     </article>

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from "./Download.module.css";
 import PageHeader from "./PageHeader";
-import { currentEAP } from "../services/common-data";
+import { currentEAP, nextEAP } from "../services/common-data";
 
 const Download = () => {
   return (
@@ -17,6 +17,11 @@ const Download = () => {
           Read more about the installation in the <Link to={"/faq"}>FAQ</Link>{" "}
           tab
         </p>
+        <p>
+          The next version of new Geosuite Presentation EAP (v{" "}
+          {nextEAP.iteration}) will be available the {nextEAP.startDate}.
+        </p>
+
         <h3>Important information</h3>
         <p>
           The first release of the EAP (v {currentEAP.iteration}) has very
