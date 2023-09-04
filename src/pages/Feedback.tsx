@@ -21,7 +21,7 @@ const Feedback = () => {
           </b>
           .
         </p>
-        <a href="https://forms.gle/nAPPSg9xKchfQxCn6" target="_blank">
+        <a href="https://forms.gle/WC4weX9rDubkrDYC7" target="_blank">
           Feedback form
         </a>
       </section>

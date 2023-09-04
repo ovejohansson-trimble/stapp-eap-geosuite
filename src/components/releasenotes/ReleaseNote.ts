@@ -14,6 +14,15 @@ const RELEASE_NOTE_EAP_V100: ReleaseNote = {
   ],
 };
 
-export const RELEASE_NOTES = [RELEASE_NOTE_EAP_V100];
+const RELEASE_NOTE_EAP_V101: ReleaseNote = {
+  releaseName: "EAP v1.0.1",
+  date: "2023-09-04",
+  notes: [
+    "Web: Released a Web application where you can view projects, boreholes, quaternary layers in both map and list format. Adapted for both desktop and mobile view with some limitations.",
+    "Desktop: Extended map functionality",
+  ],
+};
+
+export const RELEASE_NOTES = [RELEASE_NOTE_EAP_V101, RELEASE_NOTE_EAP_V100];
 
 export default ReleaseNote;

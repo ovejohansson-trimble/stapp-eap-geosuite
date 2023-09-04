@@ -17,7 +17,7 @@ function App() {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/feedback" element={<Feedback />} />
         <Route path="/releasenotes" element={<ReleaseNotes />} />
-        <Route path="/download" element={<Download />} />
+        <Route path="/clients" element={<Download />} />
       </Routes>
     </Layout>
   );

@@ -20,8 +20,8 @@ const MainNavigation = () => {
           <Nav.Link as={Link} to="/">
             Overview
           </Nav.Link>
-          <Nav.Link as={Link} to="/download">
-            Download
+          <Nav.Link as={Link} to="/clients">
+            Clients
           </Nav.Link>
           <Nav.Link as={Link} to="/releasenotes">
             Release notes

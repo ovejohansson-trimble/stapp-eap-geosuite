@@ -13,13 +13,27 @@ const FAQ_DATA = [
     ),
   },
   {
-    header: "How do i install?",
+    header: "How do I use the clients (web/desktop)?",
     bodyText: (
       <>
-        Navigate to the <Link to={"/download"}>Download</Link> tab and download
-        the installation file. The installation is a so called one click
-        installation, which means that the installation consists of only one
-        file
+        Navigate to the <Link to={"/clients"}>Clients</Link> tab. If you want to
+        use the Desktop application, download the installation file and install
+        the program. The installation is a so called one click installation,
+        which means that the installation consists of only one file.{" "}
+        <b>You only need to install the client one time</b>. For the web client
+        you only need to navigate to:{" "}
+        <a href={"https://web.eap.geosuite.se"}>https://web.eap.geosuite.se</a>{" "}
+        (You will be redirected to Trimble ID login first).
+      </>
+    ),
+  },
+  {
+    header: "How do I update the desktop client?",
+    bodyText: (
+      <>
+        You only need to install the client one time, so if another EAP version
+        is released you just need to open the program again and it will
+        automatically update.
       </>
     ),
   },

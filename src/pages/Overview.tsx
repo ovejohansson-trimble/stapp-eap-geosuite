@@ -12,7 +12,7 @@ const Overview = () => {
       {true && (
         <section>
           <h1 className="display-3 mb-4 d-flex justify-content-center">
-            <Link to={"/download"}>
+            <Link to={"/clients"}>
               EAP VERSION v{currentEAP.iteration} IS NOW AVAILABLE
             </Link>
           </h1>
@@ -31,17 +31,19 @@ const Overview = () => {
         </p>
         <p>
           The work is divided in to iterations, where we aim to release a new
-          version every 5th week. On the first day of the iteration you will be
-          able to download the latest release on this website (under the{" "}
-          <Link to={"/download"}>Download</Link> tab), and during the first two
-          weeks of the iteration you can submit feedback through a form which
-          can you find under the <Link to={"/feedback"}>Feedback</Link> tab.
+          version every 5th week. On the first day of the iteration the new
+          version is available (see <Link to={"/clients"}>Clients</Link> tab).
+          During the first two weeks of the iteration you can submit feedback
+          through a form which can you find under the{" "}
+          <Link to={"/feedback"}>Feedback</Link> tab.
         </p>
         <p>
           Each interval will focus on certain aspects of the program, e.g.
           viewing data, editing boreholes, making interpretations and so forth.
           In the beginning the functionalities will be limited, but it will
-          expand for each iteration.
+          expand for each iteration. Before testing a new EAP version, take a
+          look at the <Link to={"/releasenotes"}>Release notes</Link> to know
+          what new features to test and provide feedback on.
         </p>
         <div className="d-flex justify-content-center my-4">
           <img
@@ -72,8 +74,8 @@ const Overview = () => {
             </a>{" "}
           </li>
           <li>
-            Download the newest release of the EAP from the{" "}
-            <Link to={"/download"}>Download</Link> tab
+            Access the latest version of the EAP Desktop and Web client in the
+            <Link to={"/clients"}> Clients</Link> tab
           </li>
           <li>
             Provide feedback in the form under the{" "}
@@ -88,10 +90,13 @@ const Overview = () => {
       <section className="mb-4">
         <h1>Deadlines</h1>
         <p>
-          The current version of new Geosuite presentation EAP (v{" "}
-          {currentEAP.iteration}) is now available to download.
+          Geosuite presentation EAP (v {currentEAP.iteration}) is now available
+          for test.
         </p>
-        <p>The feedback form (for v {currentEAP.iteration}) is closed.</p>
+        <p>
+          The feedback form (for v {currentEAP.iteration}) is open until{" "}
+          {currentEAP.endDate}
+        </p>
         <p>
           The next version of Geosuite Presentation EAP (v {nextEAP.iteration})
           will be released at {nextEAP.startDate}
