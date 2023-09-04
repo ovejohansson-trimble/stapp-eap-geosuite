@@ -18,7 +18,7 @@ const RELEASE_NOTE_EAP_V101: ReleaseNote = {
   releaseName: "EAP v1.0.1",
   date: "2023-09-04",
   notes: [
-    "Web: Released a Web application where you can view projects, boreholes, quaternary layers in both map and list format. Adapted for both desktop and mobile view with some limitations.",
+    "Web: Released a web application where you can view projects, boreholes, quaternary layers in both map and list format. Adapted for both desktop and mobile view with some limitations in mobile.",
     "Desktop: Extended map functionality",
   ],
 };
