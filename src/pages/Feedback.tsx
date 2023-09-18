@@ -25,7 +25,7 @@ const Feedback = () => {
         )}
         {true && (
           <p>
-            The feedback form closed <b>{currentEAP.endDate}</b>{" "}
+            The feedback form closed <b>{currentEAP.endDate}</b>
           </p>
         )}
 
