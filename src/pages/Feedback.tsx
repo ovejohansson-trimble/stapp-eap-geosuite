@@ -16,7 +16,7 @@ const Feedback = () => {
         </p>
         {false && (
           <p>
-            The feedback form (for v {currentEAP.iteration}) is open between{" "}
+            The feedback form (for v {currentEAP.iteration}) is open between:{" "}
             <b>
               {currentEAP.startDate} and {currentEAP.endDate}
             </b>
