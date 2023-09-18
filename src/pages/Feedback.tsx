@@ -14,13 +14,21 @@ const Feedback = () => {
           take your feedback in to consideration when we are planning the next
           iteration.
         </p>
-        <p>
-          The feedback form (for v {currentEAP.iteration}) is open between{" "}
-          <b>
-            {currentEAP.startDate} and {currentEAP.endDate}
-          </b>
-          .
-        </p>
+        {false && (
+          <p>
+            The feedback form (for v {currentEAP.iteration}) is open between{" "}
+            <b>
+              {currentEAP.startDate} and {currentEAP.endDate}
+            </b>
+            .
+          </p>
+        )}
+        {true && (
+          <p>
+            The feedback form closed <b>{currentEAP.endDate}</b>{" "}
+          </p>
+        )}
+
         <a href="https://forms.gle/WC4weX9rDubkrDYC7" target="_blank">
           Feedback form
         </a>

@@ -9,7 +9,7 @@ const Overview = () => {
     <article>
       {" "}
       <PageHeader header="Geosuite Presentation EAP"></PageHeader>
-      {true && (
+      {false && (
         <section>
           <h1 className="display-3 mb-4 d-flex justify-content-center">
             <Link to={"/clients"}>
@@ -89,12 +89,14 @@ const Overview = () => {
       </section>
       <section className="mb-4">
         <h1>Deadlines</h1>
+        {false && (
+          <p>
+            Geosuite presentation EAP (v {currentEAP.iteration}) is now
+            available for test.
+          </p>
+        )}
         <p>
-          Geosuite presentation EAP (v {currentEAP.iteration}) is now available
-          for test.
-        </p>
-        <p>
-          The feedback form (for v {currentEAP.iteration}) is open until{" "}
+          The feedback form (for v {currentEAP.iteration}) closed{" "}
           {currentEAP.endDate}
         </p>
         <p>
