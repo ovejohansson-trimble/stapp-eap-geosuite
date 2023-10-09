@@ -24,7 +24,7 @@ const Download = () => {
       <section className="mb-4">
         <h1>Desktop client</h1>
         <p>
-          The second version of new Geosuite Presentation EAP (v{" "}
+          The third version of new Geosuite Presentation EAP (v{" "}
           {currentEAP.iteration}) is now available.
         </p>
         <p>

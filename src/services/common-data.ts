@@ -1,13 +1,13 @@
 const currentEAP = {
-  iteration: "1.0.1",
-  startDate: "4th of september",
-  endDate: "17th of september",
+  iteration: "1.0.2",
+  startDate: "9th of october",
+  endDate: "22nd of october",
 };
 
 const nextEAP = {
-  iteration: "1.0.2",
-  startDate: "9th of october",
-  endDate: "22nd of september",
+  iteration: "1.0.3",
+  startDate: "13th of november",
+  endDate: "3rd of december",
 };
 
 export { currentEAP, nextEAP };

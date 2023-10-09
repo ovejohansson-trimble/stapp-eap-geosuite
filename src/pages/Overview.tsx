@@ -5,17 +5,23 @@ import styles from "./Overview.module.css";
 import { currentEAP, nextEAP } from "../services/common-data";
 
 const Overview = () => {
+  const isTestable = true;
   return (
     <article>
       {" "}
       <PageHeader header="Geosuite Presentation EAP"></PageHeader>
-      {false && (
+      {isTestable && (
         <section>
-          <h1 className="display-3 mb-4 d-flex justify-content-center">
+          <h1 className="display-4 mb-2 d-flex justify-content-center">
             <Link to={"/clients"}>
               EAP VERSION v{currentEAP.iteration} IS NOW AVAILABLE
             </Link>
           </h1>
+          <h4 className="mb-4 d-flex justify-content-center">
+            <Link to={"/releasenotes"}>
+              Please read release notes before testing
+            </Link>
+          </h4>
         </section>
       )}
       <section className="mb-4">
@@ -89,20 +95,30 @@ const Overview = () => {
       </section>
       <section className="mb-4">
         <h1>Deadlines</h1>
-        {false && (
-          <p>
-            Geosuite presentation EAP (v {currentEAP.iteration}) is now
-            available for test.
-          </p>
+        {isTestable ? (
+          <div>
+            <p>
+              Geosuite presentation EAP (v {currentEAP.iteration}) was released
+              on {currentEAP.startDate} and is available for testing.
+            </p>
+            <p>
+              The feedback form (for v {currentEAP.iteration}) is open until{" "}
+              {currentEAP.endDate}.
+            </p>
+          </div>
+        ) : (
+          <div>
+            <p>
+              The feedback form (for v {currentEAP.iteration}) closed{" "}
+              {currentEAP.endDate}
+            </p>
+
+            <p>
+              The next version of Geosuite Presentation EAP (v{" "}
+              {nextEAP.iteration}) will be released at {nextEAP.startDate}
+            </p>
+          </div>
         )}
-        <p>
-          The feedback form (for v {currentEAP.iteration}) closed{" "}
-          {currentEAP.endDate}
-        </p>
-        <p>
-          The next version of Geosuite Presentation EAP (v {nextEAP.iteration})
-          will be released at {nextEAP.startDate}
-        </p>
       </section>
     </article>
   );

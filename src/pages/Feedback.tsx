@@ -1,7 +1,9 @@
 import PageHeader from "./PageHeader";
 import { currentEAP } from "../services/common-data";
+import { Link } from "react-router-dom";
 
 const Feedback = () => {
+  const isTestable = true;
   return (
     <article>
       <PageHeader header="Feedback"></PageHeader>
@@ -14,22 +16,27 @@ const Feedback = () => {
           take your feedback in to consideration when we are planning the next
           iteration.
         </p>
-        {false && (
+        <div>
+          <p>Please read release notes before testing:</p>
+          <Link to={"/releasenotes"}>Release notes</Link>
+        </div>
+
+        {isTestable && (
           <p>
-            The feedback form (for v {currentEAP.iteration}) is open between:{" "}
+            The feedback form (for v {currentEAP.iteration}) is open between{" "}
             <b>
               {currentEAP.startDate} and {currentEAP.endDate}
             </b>
             .
           </p>
         )}
-        {true && (
+        {!isTestable && (
           <p>
             The feedback form closed <b>{currentEAP.endDate}</b>
           </p>
         )}
 
-        <a href="https://forms.gle/WC4weX9rDubkrDYC7" target="_blank">
+        <a href="https://forms.gle/1ZRM21hEAftvJU5w7" target="_blank">
           Feedback form
         </a>
       </section>
