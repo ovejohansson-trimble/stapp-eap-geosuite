@@ -2,10 +2,9 @@ import PageHeader from "./PageHeader";
 import EAPProcess from "../assets/EAP_process.png";
 import { Link } from "react-router-dom";
 import styles from "./Overview.module.css";
-import { currentEAP, nextEAP } from "../services/common-data";
+import { currentEAP, isTestable, nextEAP } from "../services/common-data";
 
 const Overview = () => {
-  const isTestable = true;
   return (
     <article>
       {" "}
