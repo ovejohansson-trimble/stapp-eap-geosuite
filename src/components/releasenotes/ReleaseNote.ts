@@ -46,7 +46,24 @@ const RELEASE_NOTE_EAP_V102: ReleaseNote = {
   ],
 };
 
+const RELEASE_NOTE_EAP_V103: ReleaseNote = {
+  releaseName: "EAP v1.0.3",
+  date: "2023-11-13",
+  notes: [
+    "Desktop: Added a 'fake' import, copy and export project workflow. It is just a workflow for you a user to try out and provide feedback on, it does not work with any data in this EAP.",
+    `Desktop: Importing data consists of either importing projects from 'external' sources or from 'old geosuite format' (.dbsx). It is divided in to two steps. First you create a import request by selecting 'New import' or 'New import dbsx' in the ribbon. You can then follow the progress of that import request in a 'Imports' view. When the import is ready to be imported its status will be set as 'Ready' in the 'Imports' view, you will then be able to finalize the import. In the finalization you can do additional configurations such as adding prefix/suffix to boreholes etc.
+    The import workflow is divided into two steps as the first step is either converting data from 'old geosuite format' or retrieving data from external sources, which could take some time.`,
+    "Desktop: Exporting data (projects) workflow is similar to the import workflow. You create a export request by selecting 'New export' in the ribbon. In the 'Exports' view you can follow the progress of your export, if it is completed, failed etc. ",
+    "Desktop: The copy project data workflow is meant to be used to copy 'internal' project data, e.g. copying boreholes from project Y to project X.",
+    "Desktop: Minor UI improvements and bug fixes.",
+    "Web: New sidebar added, and updated navigation between projects and selected project.",
+    "Web: Added a table for field planning with some limited features.",
+    "Web: UI enhancements and bug fixes.",
+  ],
+};
+
 export const RELEASE_NOTES = [
+  RELEASE_NOTE_EAP_V103,
   RELEASE_NOTE_EAP_V102,
   RELEASE_NOTE_EAP_V101,
   RELEASE_NOTE_EAP_V100,

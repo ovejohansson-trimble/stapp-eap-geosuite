@@ -1,15 +1,15 @@
 const currentEAP = {
-  iteration: "1.0.2",
-  startDate: "9th of october",
-  endDate: "22nd of october",
+  iteration: "1.0.3",
+  startDate: "13th of november",
+  endDate: "26th of november",
 };
 
 const nextEAP = {
-  iteration: "1.0.3",
-  startDate: "13th of november",
-  endDate: "3rd of december",
+  iteration: "1.0.4",
+  startDate: "18th of december",
+  endDate: "31st of december",
 };
 
-const isTestable = false;
+const isTestable = true;
 
 export { currentEAP, nextEAP, isTestable };
