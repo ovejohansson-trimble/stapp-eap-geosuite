@@ -10,6 +10,6 @@ const nextEAP = {
   endDate: "31st of december",
 };
 
-const isTestable = true;
+const isTestable = false;
 
 export { currentEAP, nextEAP, isTestable };
