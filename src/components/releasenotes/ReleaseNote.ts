@@ -62,7 +62,19 @@ const RELEASE_NOTE_EAP_V103: ReleaseNote = {
   ],
 };
 
+const RELEASE_NOTE_EAP_V104: ReleaseNote = {
+  releaseName: "EAP v1.0.4",
+  date: "2023-12-20",
+  notes: [
+    "Web & Desktop: Added 'heat maps' so that you can easily identify boreholes with clay, bedrock, boulder or sensitive clay.",
+    "Desktop: Added protocol rows and handling of protocol rows for all field drilling methods.",
+    "Web: Changed starting page and added a preview of a 'field planner' tool (Not yet finished) inside a selected project.",
+    "Web & Desktop: Minor bug fixes and UI enhancements",
+  ],
+};
+
 export const RELEASE_NOTES = [
+  RELEASE_NOTE_EAP_V104,
   RELEASE_NOTE_EAP_V103,
   RELEASE_NOTE_EAP_V102,
   RELEASE_NOTE_EAP_V101,
