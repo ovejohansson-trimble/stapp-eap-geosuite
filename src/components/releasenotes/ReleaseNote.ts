@@ -73,7 +73,19 @@ const RELEASE_NOTE_EAP_V104: ReleaseNote = {
   ],
 };
 
+const RELEASE_NOTE_EAP_V105: ReleaseNote = {
+  releaseName: "EAP v1.0.5",
+  date: "2024-01-29",
+  notes: [
+    "Desktop: Added additional protocol rows and handling of protocol rows for measurement and testing methods",
+    "Desktop: Added graphical drawing for almost all NGF and SGF drilling methods",
+    "Web: Added graphical drawing for all NGF & SGF drilling methods",
+    "Web & Desktop: Minor bug fixes and UI enhancements",
+  ],
+};
+
 export const RELEASE_NOTES = [
+  RELEASE_NOTE_EAP_V105,
   RELEASE_NOTE_EAP_V104,
   RELEASE_NOTE_EAP_V103,
   RELEASE_NOTE_EAP_V102,
