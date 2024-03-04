@@ -84,7 +84,19 @@ const RELEASE_NOTE_EAP_V105: ReleaseNote = {
   ],
 };
 
+const RELEASE_NOTE_EAP_V106: ReleaseNote = {
+  releaseName: "EAP v1.0.6",
+  date: "2024-03-04",
+  notes: [
+    "Desktop: Added lab methods, properties and protocols including CRS, Disturbed and Undisturbed lab analysis.",
+    "Desktop: Continued work with drawing of borehole graphs",
+    "Web: Added search bar in map to locate boreholes",
+    "Web: Inside a project, added 'Field planner' to the sidebar which is under development. This will be a tool to create, manage and follow up field investigations.",
+  ],
+};
+
 export const RELEASE_NOTES = [
+  RELEASE_NOTE_EAP_V106,
   RELEASE_NOTE_EAP_V105,
   RELEASE_NOTE_EAP_V104,
   RELEASE_NOTE_EAP_V103,
