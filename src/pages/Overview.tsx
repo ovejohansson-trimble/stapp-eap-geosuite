@@ -11,7 +11,13 @@ const Overview = () => {
       <PageHeader header="Geosuite Presentation EAP"></PageHeader>
       {isTestable && (
         <section>
-          <h1 className="display-4 mb-2 d-flex justify-content-center">
+          <h1>Current release</h1>
+          <p>
+            The release of v1.0.7 has been post poned to the 20th of may to
+            include more functionalities and features. It is still possible to
+            test the v1.0.6 release and give feedback until the 15th of april.
+          </p>
+          {/* <h1 className="display-4 mb-2 d-flex justify-content-center">
             <Link to={"/clients"}>
               EAP VERSION v{currentEAP.iteration} IS NOW AVAILABLE
             </Link>
@@ -20,7 +26,7 @@ const Overview = () => {
             <Link to={"/releasenotes"}>
               Please read release notes before testing
             </Link>
-          </h4>
+          </h4> */}
         </section>
       )}
       <section className="mb-4">
