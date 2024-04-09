@@ -13,7 +13,7 @@ const Overview = () => {
         <section>
           <h1>Current release</h1>
           <p>
-            The release of v1.0.7 has been post poned to the 20th of may to
+            The release of v1.0.7 has been post poned to the 13th of may to
             include more functionalities and features. It is still possible to
             test the v1.0.6 release and give feedback until the 15th of april.
           </p>
