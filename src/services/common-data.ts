@@ -5,11 +5,17 @@ const currentEAP = {
 };
 
 const nextEAP = {
-  iteration: "1.0.7",
-  startDate: "20th of may",
-  endDate: "3rd of june",
+  iteration: "1.0.8",
+  startDate: "21th of may",
+  endDate: "4th of june",
 };
 
-const isTestable = true;
+// const nextEAP1 = {
+//   iteration: "1.0.9",
+//   startDate: "18th of june",
+//   endDate: "5th of august",
+// };
+
+const isTestable = false;
 
 export { currentEAP, nextEAP, isTestable };
