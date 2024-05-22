@@ -13,7 +13,7 @@ const Overview = () => {
         <section>
           <h1>Current release</h1>
           <p>
-            The latest release (v 1.0.8), that came out may 21st, contains lots
+            The latest release (v 1.0.8), that came out may 22nd, contains lots
             of new functionalities for you to try out.
           </p>
           <p>
