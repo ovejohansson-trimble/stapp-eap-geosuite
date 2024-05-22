@@ -30,7 +30,7 @@ const Feedback = () => {
                 {currentEAP.startDate} and {currentEAP.endDate}
               </b>
             </p>
-            <a href="https://forms.gle/y2Qv1WR3VqC1K6Zc9" target="_blank">
+            <a href="https://forms.gle/KrJYkSYE8PBbSzgh7" target="_blank">
               Feedback form
             </a>
           </div>

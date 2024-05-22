@@ -13,9 +13,13 @@ const Overview = () => {
         <section>
           <h1>Current release</h1>
           <p>
-            The release of v1.0.7 has been post poned to the 13th of may to
-            include more functionalities and features. It is still possible to
-            test the v1.0.6 release and give feedback until the 15th of april.
+            The latest release (v 1.0.8), that came out may 21st, contains lots
+            of new functionalities for you to try out.
+          </p>
+          <p>
+            You can either go and install the desktop application, and test its
+            newly added CAD connection and improved UI, or test out the web
+            applications new borehole and field investigation view.
           </p>
           {/* <h1 className="display-4 mb-2 d-flex justify-content-center">
             <Link to={"/clients"}>

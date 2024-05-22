@@ -95,7 +95,26 @@ const RELEASE_NOTE_EAP_V106: ReleaseNote = {
   ],
 };
 
+const RELEASE_NOTE_EAP_V108: ReleaseNote = {
+  releaseName: "EAP v1.0.8",
+  date: "2024-05-21",
+  notes: [
+    "Desktop: Added connection to CAD. Possible to select CAD version inside the program, under the ribbon 'Drawing'.",
+    "Desktop: Added possibility to create plan drawings for both norwegian and swedish projects, with or without detailed layers.",
+    "Desktop: Draw long sections inside CAD software in both norwegian and swedish projects. All soundings have been added, testings & lab protocols will follow shortly.",
+    //"Desktop: Added additional CAD functionalities such as...",
+    "Desktop: Increased flexibility and control over UI elements - possible to adjust and place table, map, borehole information almost anywhere",
+    "Web: Added filtering functionality",
+    "Web: Possible to update field status and remarks for soundings",
+    "Web: Possible to draw boreholes, methods and soil properties for all soundings, testings and lab analyses.",
+    "Web: Added 'Field planner', where a user can create field investigations and new boreholes.",
+    "Web: New improved interface for selected borehole and method information.",
+    "Web: Improved UI for tablets and mobiles.",
+  ],
+};
+
 export const RELEASE_NOTES = [
+  RELEASE_NOTE_EAP_V108,
   RELEASE_NOTE_EAP_V106,
   RELEASE_NOTE_EAP_V105,
   RELEASE_NOTE_EAP_V104,
