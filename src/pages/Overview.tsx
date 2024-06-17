@@ -21,6 +21,10 @@ const Overview = () => {
             newly added CAD connection and improved UI, or test out the web
             applications new borehole and field investigation view.
           </p>
+          <p>
+            This version has an extended test period, and the next version (v
+            1.0.9) will be released after summer holidays.
+          </p>
           {/* <h1 className="display-4 mb-2 d-flex justify-content-center">
             <Link to={"/clients"}>
               EAP VERSION v{currentEAP.iteration} IS NOW AVAILABLE

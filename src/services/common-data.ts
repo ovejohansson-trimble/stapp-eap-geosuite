@@ -1,13 +1,13 @@
 const currentEAP = {
   iteration: "1.0.8",
   startDate: "22th of may",
-  endDate: "3rd of june",
+  endDate: "5th of august",
 };
 
 const nextEAP = {
   iteration: "1.0.9",
-  startDate: "18th of june",
-  endDate: "5th of august",
+  startDate: "26th of august",
+  endDate: "9th of september",
 };
 
 const isTestable = true;
