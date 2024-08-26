@@ -19,8 +19,8 @@ const Download = () => {
             <section className="mb-4">
               <h1>Desktop client</h1>
               <p>
-                The fifth version of new Geosuite Presentation EAP (v{" "}
-                {currentEAP.iteration}) is now available.
+                The latest version of Geosuite Presentation EAP is v{" "}
+                {currentEAP.iteration}.
               </p>
               <p>
                 <b>Note!</b> If you already installed the client in a previous

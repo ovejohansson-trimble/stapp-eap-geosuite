@@ -24,12 +24,6 @@ const Feedback = () => {
 
         {isTestable ? (
           <div>
-            <p>
-              The feedback form (for v {currentEAP.iteration}) is open between{" "}
-              <b>
-                {currentEAP.startDate} and {currentEAP.endDate}
-              </b>
-            </p>
             <a href="https://forms.gle/KrJYkSYE8PBbSzgh7" target="_blank">
               Feedback form
             </a>

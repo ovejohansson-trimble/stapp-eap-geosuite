@@ -2,7 +2,7 @@ import PageHeader from "./PageHeader";
 import EAPProcess from "../assets/EAP_process.png";
 import { Link } from "react-router-dom";
 import styles from "./Overview.module.css";
-import { currentEAP, isTestable, nextEAP } from "../services/common-data";
+import { isTestable } from "../services/common-data";
 
 const Overview = () => {
   return (
@@ -13,28 +13,14 @@ const Overview = () => {
         <section>
           <h1>Current release</h1>
           <p>
-            The latest release (v 1.0.8), that came out may 22nd, contains lots
-            of new functionalities for you to try out.
+            The latest release (v 1.0.8) contains lots of new functionalities
+            for you to try out.
           </p>
           <p>
             You can either go and install the desktop application, and test its
             newly added CAD connection and improved UI, or test out the web
             applications new borehole and field investigation view.
           </p>
-          <p>
-            This version has an extended test period, and the next version (v
-            1.0.9) will be released after summer holidays.
-          </p>
-          {/* <h1 className="display-4 mb-2 d-flex justify-content-center">
-            <Link to={"/clients"}>
-              EAP VERSION v{currentEAP.iteration} IS NOW AVAILABLE
-            </Link>
-          </h1>
-          <h4 className="mb-4 d-flex justify-content-center">
-            <Link to={"/releasenotes"}>
-              Please read release notes before testing
-            </Link>
-          </h4> */}
         </section>
       )}
       <section className="mb-4">
@@ -105,33 +91,6 @@ const Overview = () => {
           If you have any questions or issues, feel free to contact us at{" "}
           <a href="mailto:eap.geosuite@trimble.com">eap.geosuite@trimble.com</a>
         </p>
-      </section>
-      <section className="mb-4">
-        <h1>Deadlines</h1>
-        {isTestable ? (
-          <div>
-            <p>
-              Geosuite presentation EAP (v {currentEAP.iteration}) was released
-              on {currentEAP.startDate} and is available for testing.
-            </p>
-            <p>
-              The feedback form (for v {currentEAP.iteration}) is open until{" "}
-              {currentEAP.endDate}.
-            </p>
-          </div>
-        ) : (
-          <div>
-            <p>
-              The feedback form (for v {currentEAP.iteration}) closed{" "}
-              {currentEAP.endDate}
-            </p>
-
-            <p>
-              The next version of Geosuite Presentation EAP (v{" "}
-              {nextEAP.iteration}) will be released at {nextEAP.startDate}
-            </p>
-          </div>
-        )}
       </section>
     </article>
   );
