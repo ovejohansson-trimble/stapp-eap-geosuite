@@ -12,63 +12,63 @@ const dataJb1ProtocolRow: TableDataType[] = [
     unit: "m",
     definition:
       "Djupet är mätt ifrån markytan och används som synkroniseringsparameter.",
-    dataType: "sträng",
+    dataType: "decimaltal",
   },
   {
     code: "PenetrationTimeSecPer20cm",
     parameter: "Matningstid eller sjunktid",
     unit: "s/0,2 m",
     definition: "Matningstiden mäts i sekunder per 20:e centimeter",
-    dataType: "sträng",
+    dataType: "decimaltal",
   },
   {
     code: "Remarks",
     parameter: "Kommentarer",
     unit: "",
     definition: "",
-    dataType: "sträng",
+    dataType: "textsträng",
   },
   {
     code: "FlushingMediaFlow",
     parameter: "Spolflöde ut",
     unit: "l/min",
     definition: "",
-    dataType: "sträng",
+    dataType: "decimaltal",
   },
   {
     code: "Turning",
     parameter: "Vridmoment",
     unit: "kNm",
     definition: "",
-    dataType: "sträng",
+    dataType: "decimaltal",
   },
   {
     code: "FlushingMediaPressure",
     parameter: "Spolmedia, tryck",
     unit: "MPa",
     definition: "",
-    dataType: "sträng",
+    dataType: "decimaltal",
   },
   {
     code: "PressureOnTurningEngine",
     parameter: "Tryck på vrid motor",
     unit: "MPa",
     definition: "",
-    dataType: "sträng",
+    dataType: "decimaltal",
   },
   {
     code: "IsFlushing",
     parameter: "Spolning av/på",
     unit: "",
     definition: "",
-    dataType: "sträng",
+    dataType: "booleskt",
   },
   {
     code: "FreeWaterSurface",
     parameter: "Fri vattenyta i bh",
     unit: "m u my",
     definition: "",
-    dataType: "sträng",
+    dataType: "decimaltal",
   },
 ];
 
@@ -79,7 +79,7 @@ const dataJb1: TableDataType[] = [
     parameter: "Diameter Borrkrona",
     unit: "mm",
     definition: "Måttet av en borrkronas diameter",
-    dataType: "sträng",
+    dataType: "decimaltal",
   },
   {
     code: "CrownType",
@@ -93,7 +93,7 @@ const dataJb1: TableDataType[] = [
     parameter: "Stänger",
     unit: "",
     definition: "Vilken typ av stänger som använts",
-    dataType: "sträng",
+    dataType: "textsträng",
   },
   {
     code: "FlushingMedia",
@@ -107,7 +107,14 @@ const dataJb1: TableDataType[] = [
     parameter: "Hammare",
     unit: "",
     definition: "Vilken typ av hammare som använts",
-    dataType: "sträng",
+    dataType: "textsträng",
+  },
+  {
+    code: "Jb1ProtocolRows",
+    parameter: "Protokollrader",
+    unit: "",
+    definition: "Protokollrader som redovisar data från utförd sondering",
+    dataType: "lista",
   },
 ];
 
@@ -123,6 +130,7 @@ const propertiesJb1 = [
     type: "Referensdokument",
     value: "SGF rapport 4:2012 Metodbeskrivning för jordbersondering",
   },
+  { type: "Förälder", value: "Borrad metod" },
 ];
 
 const propertiesJb1ProtocolRow = [

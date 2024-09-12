@@ -11,16 +11,19 @@ const Breadcrumb: React.FC<{
       separator={<NavigateNextIcon fontSize="small" />}
       aria-label="breadcrumb"
     >
-      <Typography color="inherit">Investigation point</Typography>
-      <Typography color="inherit">Investigation</Typography>
-      <Typography color="inherit">Field drilling</Typography>
+      <Typography color="inherit">Undersökningspunkt</Typography>
+      <Typography color="inherit">Metod</Typography>
+      <Typography color="inherit">Borrad metod</Typography>
       <Link
         color={selected === "Jb1" ? "textPrimary" : "inherit"}
         onClick={() => onSelect("Jb1")}
         underline="hover"
-        sx={{ cursor: "pointer" }}
+        sx={{
+          cursor: "pointer",
+          fontWeight: selected === "Jb1" ? "bold" : "normal",
+        }}
       >
-        Jb1
+        Jord-bergsondering 1
       </Link>
       <Link
         color={selected === "Jb1 protokollrad" ? "textPrimary" : "inherit"}
@@ -31,7 +34,7 @@ const Breadcrumb: React.FC<{
           fontWeight: selected === "Jb1 protokollrad" ? "bold" : "normal",
         }}
       >
-        Jb1 protokollrad
+        Jord-bergsondering 1 protokollrad
       </Link>
     </Breadcrumbs>
   );
