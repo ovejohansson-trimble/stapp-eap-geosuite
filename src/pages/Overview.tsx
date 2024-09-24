@@ -3,6 +3,8 @@ import EAPProcess from "../assets/EAP_process.png";
 import { Link } from "react-router-dom";
 import styles from "./Overview.module.css";
 import { isTestable } from "../services/common-data";
+import web from "../assets/Web.png";
+import desktop from "../assets/Desktop.jpg";
 
 const Overview = () => {
   const hide = true;
@@ -12,7 +14,7 @@ const Overview = () => {
       <PageHeader header="Geosuite Presentation EAP"></PageHeader>
       {isTestable && (
         <section>
-          <h1>MVP Release</h1>
+          <h2>MVP Release</h2>
           <p>
             We are excited to share that the Geosuite team plans to launch a
             Minimum Viable Product (MVP) version of the new Geosuite
@@ -21,14 +23,25 @@ const Overview = () => {
           </p>
           <p>
             For more information, please read the announcement at the Trimble
-            Geosuite Community page.
+            Geosuite Community page in the link below.
           </p>
           <a
-            href="https://community.trimble.com/communities/publiccommunity?CommunityKey=aafa8650-ac02-45f7-9dac-01861822445d"
+            href="https://community.trimble.com/viewdocument/next-gen-geosuite-mvp-coming-soon-i?CommunityKey=aafa8650-ac02-45f7-9dac-01861822445d&tab=librarydocuments"
             target="_blank"
           >
-            Trimble Geosuite community page
+            Geosuite Presentation MVP announcement at Geosuite Community
           </a>
+          <div style={{ marginTop: "2rem" }}>
+            <h4>Preview of the MVP</h4>
+            <div style={{ marginTop: "1rem" }}>
+              <h5>Desktop</h5>
+              <img className="image" src={desktop} alt="MVP Desktop image" />
+            </div>
+            <div style={{ marginTop: "1rem" }}>
+              <h5>Web</h5>
+              <img className="image" src={web} alt="MVP Web image" />
+            </div>
+          </div>
         </section>
       )}
       {!hide && (
