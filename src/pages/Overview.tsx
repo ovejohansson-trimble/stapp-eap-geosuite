@@ -1,7 +1,6 @@
 import PageHeader from "./PageHeader";
 
 const Overview = () => {
-  const hide = true;
   return (
     <article>
       <PageHeader header="Geosuite Presentation"></PageHeader>
